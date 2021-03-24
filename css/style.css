@@ -1,0 +1,290 @@
+/* ***************************************** */
+/* Starting of Responsive Grid System Style */
+
+*{ 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Fixed width container[For extra small devices(mobile)] */
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+/* For responsive fixed width container */
+[class*="container-"]{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+/* Full width container */
+.container-fluid{
+    width: 100%;
+    padding: 0;
+}
+
+/* Fixing Floating */
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* -------- For all Devices -------- */
+[class*="col-"]{
+    /* width changed on 2021/03/18 */
+    /*width: 100%;*/
+    height:auto;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/*-------- Extra Small Devices --------*/
+/*-------- For Small phones --------*/
+@media only screen and (max-device-width: 575px) {
+    /* Fixed width container[For extra small devices(mobile)] */
+    .container{
+        width: 100%;
+    }
+
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+/*-------- Small Devices --------*/
+/*-------- For large phones and some tablets in portrait mode --------*/
+@media only screen and (min-device-width: 576px) {
+    /* Responsive fixed width container fo small devices */
+    .container,.container-sm{
+        max-width: 540px;
+    }
+    /* added on 2021/03/18 */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    .col-sm-1 {width: 8.33%;}
+    .col-sm-2 {width: 16.66%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: 33.33%;}
+    .col-sm-5 {width: 41.66%;}
+    .col-sm-6 {width: 50%;}
+    .col-sm-7 {width: 58.33%;}
+    .col-sm-8 {width: 66.66%;}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: 83.33%;}
+    .col-sm-11 {width: 91.66%;}
+    .col-sm-12 {width: 100%;}
+}
+
+/* -------- Medium Devices -------- */
+/* -------- For tablets in portrait mode -------- */
+@media only screen and (min-device-width: 768px) {
+    /* Responsive fixed width container fo medium devices */
+    .container,.container-sm,.container-md{
+        max-width: 720px;
+    }
+
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+}
+
+/* -------- Large Devices -------- */
+/* -------- For tablets in landscape mode or small laptops --------*/
+@media only screen and (min-device-width: 992px) {
+    /* Responsive fixed width container fo large devices */
+    .container,.container-sm,.container-md,.container-lg{
+        max-width: 960px;
+    }
+
+    .col-lg-1 {width: 8.33%;}
+    .col-lg-2 {width: 16.66%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%;}
+    .col-lg-5 {width: 41.66%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}
+    .col-lg-8 {width: 66.66%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%;}
+    .col-lg-11 {width: 91.66%;}
+    .col-lg-12 {width: 100%;}
+}
+
+/*-------- Extra Large Devices -------- */
+/*-------- For large laptops/desktops: --------*/ 
+
+/* ----------- Non Retina Screens ----------- */
+@media only screen and (min-device-width: 1200px){
+
+    /* Responsive fixed width container fo extra large devices */
+    .container,.container-sm,.container-md,.container-lg,.container-xl{
+        max-width: 1140px;
+    }
+
+    .col-xl-1 {width: 8.33%;}
+    .col-xl-2 {width: 16.66%;}
+    .col-xl-3 {width: 25%;}
+    .col-xl-4 {width: 33.33%;}
+    .col-xl-5 {width: 41.66%;}
+    .col-xl-6 {width: 50%;}
+    .col-xl-7 {width: 58.33%;}
+    .col-xl-8 {width: 66.66%;}
+    .col-xl-9 {width: 75%;}
+    .col-xl-10 {width: 83.33%;}
+    .col-xxl-11 {width: 91.66%;}
+    .col-l-12 {width: 100%;}
+}
+
+/* ----------- Retina Screens ----------- */
+/*
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+
+}*/
+
+/* Finishing of Responsive Grid System Style */
+/* ***************************************** */
+
+/* Color Theme Swatches in RGBA */
+.Yellow-Grey-Red-1-rgba { color: rgba(186, 31, 31, 1); }
+.Yellow-Grey-Red-2-rgba { color: rgba(5, 17, 28, 1); }
+.Yellow-Grey-Red-3-rgba { color: rgba(189, 198, 198, 1); }
+.Yellow-Grey-Red-4-rgba { color: rgba(255, 235, 77, 1); }
+.Yellow-Grey-Red-5-rgba { color: rgba(17, 18, 23, 1); }
+
+#form-conatiner{
+    display: flex;
+}
+
+#formHolder{
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: rgba(5, 17, 28, 1);
+    box-shadow:  0 0 2px 0 rgba(0, 0, 0, 0.2), 0 0 3px 0 rgba(0, 0, 0, 0.19);
+}
+
+#hint{
+    padding-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.form-row{
+    margin-bottom: 15px;
+}
+
+input[type="text"],select{
+    width: 100%;
+    padding: 9px 12px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.2), 0 0px 3px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+input[type="text"]#expValue{
+    background-color: rgba(186, 31, 31, 0.5);
+    cursor: no-drop;
+}
+
+input[type="text"]:focus,select:focus{
+    box-shadow: 0px 0px 5px #0000FF;
+}
+
+input[type="submit"]{
+    margin: auto;
+    padding: 10px 25px;
+    font-size: 17px;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    background-color: rgba(5, 17, 28, 1);
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: rgba(186, 31, 31, 1);
+    box-shadow: 2px 4px 5px rgba(0,0,0,0.5);
+}
+
+.error{
+    visibility: hidden;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(186, 31, 31, 1);
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#feedback{
+    margin: auto;
+    visibility: hidden;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    animation-name: example;
+    animation-duration: 1s;
+    box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.2), 0 0px 3px 0 rgba(0, 0, 0, 0.19);
+}
+
+.correct{
+    color: #4CAF50;
+}
+
+.wrong{
+    color: rgba(186, 31, 31, 1);
+}
+
+@keyframes example {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
